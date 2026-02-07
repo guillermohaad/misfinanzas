@@ -390,7 +390,7 @@ foreach($periodos_lista as $periodo) {
                                         <td colspan="4"></td>
                                     </tr>
                                     
-                                    <!-- Subtotales -->
+                                    <!-- Subtotales recuadros -->
                                     <tr class="table-warning">
                                         <td class="text-center"><?php echo $item++; ?></td>
                                         <td><strong>Subtotales</strong></td>
