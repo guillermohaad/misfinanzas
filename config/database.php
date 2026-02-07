@@ -3,6 +3,8 @@
  * Configuración de Base de Datos
  * Sistema de Gestión Financiera Personal - Adaptado para Easypanel
  */
+ // Configuración del Idioma para fechas
+$db->exec("SET lc_time_names = 'es_ES'");
 
 // Configuración de base de datos usando Variables de Entorno de Easypanel
 define('DB_HOST', getenv('DB_HOST') ?: 'basededatos'); // Usa 'basededatos' por defecto
