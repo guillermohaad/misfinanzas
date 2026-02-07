@@ -677,8 +677,8 @@ foreach($periodos_lista as $periodo) {
                 doc.text(item.toString(), 25, yPos, { align: 'center' });
                 doc.text('Subtotales', 35, yPos);
                 doc.text('$<?php echo number_format($total_ingresos, 0, ".", ","); ?>', 115, yPos, { align: 'right' });
-                doc.text('$<?php echo number_format($total_egresos + $total_ahorro, 0, ".", ","); ?>', 150, yPos, { align: 'right' });
-                doc.text('<?php echo number_format(($total_egresos + $total_ahorro) / max($total_ingresos, 1) * 100, 2); ?>%', 180, yPos, { align: 'right' });
+                doc.text('$<?php echo number_format($total_egresos, 0, ".", ","); ?>', 150, yPos, { align: 'right' });
+                doc.text('<?php echo number_format(($total_egresos) / max($total_ingresos, 1) * 100, 2); ?>%', 180, yPos, { align: 'right' });
                 yPos += 6;
                 item++;
                 
