@@ -395,8 +395,8 @@ foreach($periodos_lista as $periodo) {
                                         <td class="text-center"><?php echo $item++; ?></td>
                                         <td><strong>Subtotales</strong></td>
                                         <td class="text-end fw-bold">$<?php echo number_format($total_ingresos, 0, ',', '.'); ?></td>
-                                        <td class="text-end fw-bold">$<?php echo number_format($total_egresos + $total_ahorro, 0, ',', '.'); ?></td>
-                                        <td class="text-center fw-bold"><?php echo number_format(($total_egresos + $total_ahorro) / max($total_ingresos, 1) * 100, 2); ?>%</td>
+                                        <td class="text-end fw-bold">$<?php echo number_format($total_egresos, 0, ',', '.'); ?></td>
+                                        <td class="text-center fw-bold"><?php echo number_format(($total_egresos) / max($total_ingresos, 1) * 100, 2); ?>%</td>
                                     </tr>
                                     
                                     <!-- Balance General -->
